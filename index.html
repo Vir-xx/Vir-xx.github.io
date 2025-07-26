@@ -1,22 +1,174 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
-  </head>
-  <body>
-    <h1>Your Name</h1>
-    <p>About Me: Brief intro here.</p>
-    
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Project Name</strong>: Short description.
-        [<a href="https://github.com/yourusername/project">GitHub</a>]
-      </li>
-      <!-- Add more projects here -->
-    </ul>
-    
-    <h2>Contact</h2>
-    <p>Email: youremail@example.com</p>
-  </body>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">YourName</a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Your Name Here</h1>
+                <p class="tagline">A Passionate <span class="typing-text">Web Developer</span></p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="#portfolio" class="btn primary-btn">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile.png" alt="Your Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section common-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hi there! I'm [Your Name], a [Your Profession/Specialty, e.g., Full-stack Developer, UI/UX Designer] with [Number] years of experience.
+                    I specialize in [mention your key skills, e.g., building responsive web applications, creating intuitive user interfaces,
+                    backend development with Node.js]. My passion lies in crafting clean, efficient, and user-friendly digital experiences.
+                </p>
+                <p>
+                    I have a strong background in [mention technologies, e.g., HTML, CSS, JavaScript, React, Python, SQL] and
+                    I'm always eager to learn new technologies and improve my skills. When I'm not coding, you can find me [mention hobbies, e.g.,
+                    exploring new hiking trails, reading sci-fi novels, or experimenting with new recipes].
+                </p>
+                <a href="images/your-resume.pdf" download class="btn secondary-btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section common-section bg-light">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section common-section">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <div class="overlay">
+                        <h3>Project Title 1</h3>
+                        <p>Short description of the project.</p>
+                        <a href="https://yourproject1link.com" target="_blank" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <div class="overlay">
+                        <h3>Project Title 2</h3>
+                        <p>Short description of the project.</p>
+                        <a href="https://yourproject2link.com" target="_blank" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <div class="overlay">
+                        <h3>Project Title 3</h3>
+                        <p>Short description of the project.</p>
+                        <a href="https://yourproject3link.com" target="_blank" class="view-project-btn">View Project</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section common-section bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">Have a project in mind or just want to say hello? Feel free to reach out!</p>
+            <form action="YOUR_FORM_SUBMISSION_ENDPOINT" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Your City, Your Country</p>
+                <p><i class="fas fa-phone"></i> +91 your-phone-number (optional)</p>
+                <p><i class="fas fa-envelope"></i> youremail@example.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="footer-social-links">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
